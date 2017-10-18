@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>WEB 浏览器模式 DOCTYPE | Dam的博客</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="前端攻城日常生活笔记">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="WEB 浏览器模式 DOCTYPE | Dam的博客">
+    <meta name="twitter:description" content="前端攻城日常生活笔记">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="WEB 浏览器模式 DOCTYPE | Dam的博客">
+    <meta property="og:description" content="前端攻城日常生活笔记">
+
+    
+    <meta name="author" content="dam">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="Dam的博客" href="/atom.xml">
+    
+
+    <link rel="canonical" href="https://dam-deng.github.io/2017/08/21/WEB 浏览器模式 DOCTYPE/"/>
+
+    
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?9cdad07c755fa23f6aced510c6760e87";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+
+<body class="home-template no-js">
+<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+<span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 Dam的博客 的主页"><img src="/images/logo.png" width="80" alt="Dam的博客 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Dam的博客">Dam的博客</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">挖坑与填坑</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">前端攻城日常生活笔记</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="visit Blog" class="blog-button">Blog</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/Dam-Deng" title="查看我們的GitHub主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-green">
+        <div id="particles-js"></div>
+    </div>
+
+
+      <script src="/js/particles.min.js"></script>
+<script src="/js/config.js"></script>
+  </div>
+</header>
+
+<div class="content-wrapper">
+    <div class="content-wrapper__inner">
+        <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2017-08-21T13:49:32.000Z" class="post-list__meta--date date">2017-08-21</time> &#8226; <span class="post-meta__tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/DOCTYPE/">DOCTYPE</a>
+</span>
+    </div>
+    <h1 class="post-title">WEB 浏览器模式 DOCTYPE</h1>
+  </header>
+
+  <section class="post">
+    <h1 id="DTD-document-type-definition"><a href="#DTD-document-type-definition" class="headerlink" title="DTD (document type definition)"></a>DTD (document type definition)</h1><p>获取兼容模式：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">document.compatMode</div><div class="line"><span class="comment">// BackCompat：标准兼容模式未开启（Standards-compliant mode）</span></div><div class="line"><span class="comment">// CSS1Compat：标准兼容模式已开启。</span></div></pre></td></tr></table></figure></p>
+<p>没有写DOCTYPE的都以怪异模式渲染。  </p>
+<p><doctype html="">是严格模式</doctype></p>
+<h1 id="混杂模式-怪异模式-Quirks-Mode"><a href="#混杂模式-怪异模式-Quirks-Mode" class="headerlink" title="混杂模式/怪异模式/Quirks Mode"></a>混杂模式/怪异模式/Quirks Mode</h1><ol>
+<li>IE盒子模型：box.width = content.width + padding + border</li>
+<li>vertical-align 属性默认取值为 bottom，因此，在图片底部会有几像素的空间。</li>
+<li>table 单元格中字体的 font-size，font-style，font-weight 属性不会继承 body，只有 family 属性会被继承。</li>
+<li>span和p这些 non-replaced inline 元素可以自定义宽度和高度</li>
+<li>元素的百分比高度不能正确应用</li>
+<li>overflow：visible 子元素溢出的时候，父元素会调整高度，以适应子元素</li>
+</ol>
+<h1 id="准标准模式-Almost-Standards-Mode"><a href="#准标准模式-Almost-Standards-Mode" class="headerlink" title="准标准模式/Almost Standards Mode"></a>准标准模式/Almost Standards Mode</h1><p>与标准模式非常类似，表格单元格内垂直方向布局渲染差异。</p>
+<h1 id="标准模式-严格模式-Standards-Mode-Strict-Mode"><a href="#标准模式-严格模式-Standards-Mode-Strict-Mode" class="headerlink" title="标准模式/严格模式/Standards Mode/Strict Mode"></a>标准模式/严格模式/Standards Mode/Strict Mode</h1><ol>
+<li>W3C 标准盒模型: box.width = content.width</li>
+<li>vertical-align 属性默认取值为 baseline。</li>
+<li>table所有font属性都会继承body的。</li>
+<li>span和p这些 non-replaced inline 元素不可以自定义宽度和高度</li>
+<li>元素的百分比高度可以正确应用</li>
+<li>overflow：visible 子元素溢出的时候，父元素不会调整高度，子元素会溢出</li>
+</ol>
+<h1 id="冷知识"><a href="#冷知识" class="headerlink" title="冷知识"></a>冷知识</h1><p>我们可以发现针对 HTML5 规范而设计的页面（如含有<audio>、<video>、<canvas>等标签）在 IE5Quirks 下是不能正确显示的，但是在 IE10 Quirks 下完全可以正确显示。也就是说，IE10 Quirks 是为了在那些针对 HTML5 设计，但是又没有添加 doctype(可以决定浏览器工作在哪种模式下，后面会详细讨论)的页面而存在的。</canvas></video></audio></p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta <span class="attribute">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attribute">content</span>=<span class="string">"IE=Edge"</span> &gt;</div></pre></td></tr></table></figure>
+<p>IE 最新版本的 Standards<br>一般情况下 x-ua-compatible 是优先于 doctype 的设定的，但是当 x-ua-compatible 设定了如“EmulateIExx”的情况时，就会同样考虑到 doctype 的影响。</p>
+
+  </section>
+
+</article>
+
+
+
+        <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2017 - <a href="/">@Dam Deng</a>
+    </span>
+</footer>
+
+    </div>
+</div>
+
+
+ 
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>浏览器缓存 | Dam的博客</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="前端攻城日常生活笔记">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="浏览器缓存 | Dam的博客">
+    <meta name="twitter:description" content="前端攻城日常生活笔记">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="浏览器缓存 | Dam的博客">
+    <meta property="og:description" content="前端攻城日常生活笔记">
+
+    
+    <meta name="author" content="dam">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="Dam的博客" href="/atom.xml">
+    
+
+    <link rel="canonical" href="https://dam-deng.github.io/2017/10/10/浏览器缓存/"/>
+
+    
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?9cdad07c755fa23f6aced510c6760e87";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+
+<body class="home-template no-js">
+<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+<span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 Dam的博客 的主页"><img src="/images/logo.png" width="80" alt="Dam的博客 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Dam的博客">Dam的博客</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">挖坑与填坑</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">前端攻城日常生活笔记</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="visit Blog" class="blog-button">Blog</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/Dam-Deng" title="查看我們的GitHub主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-green">
+        <div id="particles-js"></div>
+    </div>
+
+
+      <script src="/js/particles.min.js"></script>
+<script src="/js/config.js"></script>
+  </div>
+</header>
+
+<div class="content-wrapper">
+    <div class="content-wrapper__inner">
+        <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2017-10-10T12:20:03.000Z" class="post-list__meta--date date">2017-10-10</time> &#8226; <span class="post-meta__tags tags">于&nbsp;
+  <a class="tag-link" href="/tags/缓存/">缓存</a>
+</span>
+    </div>
+    <h1 class="post-title">浏览器缓存</h1>
+  </header>
+
+  <section class="post">
+    <h1 id="Pragma"><a href="#Pragma" class="headerlink" title="Pragma"></a>Pragma</h1><p><code>HTTP/1.0</code> 时的产物，通知客户端不要对该资源读缓存，即每次都向服务器发一次请求。</p>
+<h1 id="Expires"><a href="#Expires" class="headerlink" title="Expires"></a>Expires</h1><p><code>HTTP/1.0</code> 时的缓存策略<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">Expires</span>: <span class="selector-tag">Thu</span>, 10 <span class="selector-tag">Nov</span> 2017 08<span class="selector-pseudo">:45</span><span class="selector-pseudo">:11</span> <span class="selector-tag">GMT</span></div></pre></td></tr></table></figure></p>
+<p>特点：未过期之前不会再次请求资源<br>缺点：客户端的时间与服务器的时间不一致，导致缓存判断失败</p>
+<h1 id="Cache-Control"><a href="#Cache-Control" class="headerlink" title="Cache-Control"></a>Cache-Control</h1><p><code>HTTP/1.1</code> 中添加的字段，Cache-Control可以带的值：</p>
+<ol>
+<li><code>max-age</code>：即最大有效时间，如<code>max-age=2592000</code></li>
+<li><code>no-cache</code>：表示必须先与服务器确认资源是否被更改过(依据If-None-Match和Etag)，然后再决定是否使用本地缓存</li>
+<li><code>s-maxage</code>：同max-age，但是仅用于共享缓存，如CDN缓存</li>
+<li><code>public</code>：多用户共享缓存，默认设置</li>
+<li><code>private</code>：不能够多用户共享，HTTP认证之后，字段会自动转换成private。</li>
+</ol>
+<p>特点： <code>max-age</code>的时间是相对时间，所以不会被客户端的时间所影响。</p>
+<h1 id="Last-Modified"><a href="#Last-Modified" class="headerlink" title="Last-Modified"></a>Last-Modified</h1><p>服务器告知客户端，资源最后一次被修改的时间<br>请求头中带有该字段，服务器会将<code>If-Modified-Since</code>的值与<code>Last-Modified</code>字段进行对比，如果相等，则表示未修改，响应304；反之，则表示修改了，响应200状态码，返回数据。</p>
+<p>缺点： </p>
+<ol>
+<li>如果资源的更新不超过1秒，那么该缓存不能被使用。</li>
+<li>如果文件是通过服务器动态生成的，那么更新时间永远都是生成时间</li>
+</ol>
+<h1 id="Etag"><a href="#Etag" class="headerlink" title="Etag"></a>Etag</h1><p>Etag存储的是文件的特殊标识（一般都是hash生成的）。但比较少用，因为计算Etag需要占用服务器资源<br><img src="https://camo.githubusercontent.com/3b71c14c562e33952fc734b0a9cafe4cbf506d5c/687474703a2f2f6c68627a696d6f2e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f657461672e706e67" alt="image"></p>
+<h1 id="vary"><a href="#vary" class="headerlink" title="vary"></a>vary</h1><p>表示服务端会以什么基准字段来区分、筛选缓存版本。<br><code>Vary: User-Agent, Accept-Encoding</code></p>
+<h1 id="Date-和-Age"><a href="#Date-和-Age" class="headerlink" title="Date 和 Age"></a>Date 和 Age</h1><p>帮用户区分其收到的资源是否命中了代理服务器的缓存。<br>如果Date与当前时间相差较大，或者多次刷新Date的时间都没有变化，那么就是命中了缓存。<br>Age 也是响应报文中的首部字段，它表示该文件在代理服务器中存在的时间（秒），如文件被修改或替换，Age会重新由0开始累计。</p>
+<h1 id="浏览器行为引起的不同"><a href="#浏览器行为引起的不同" class="headerlink" title="浏览器行为引起的不同"></a>浏览器行为引起的不同</h1><ol>
+<li><code>刷新网页:</code> 如果缓存没有失效，浏览器会直接使用缓存；反之，则向服务器请求数据</li>
+<li><code>手动刷新(F5):</code> 浏览器会认为缓存失效，在请求服务器时加上Cache-Control: max-age=0字段，然后询问服务器数据是否更新。</li>
+<li><code>强制刷新(Ctrl + F5):</code> 浏览器会直接忽略缓存，在请求服务器时加上Cache-Control: no-cache字段，然后重新向服务器拉取文件。</li>
+</ol>
+<h1 id="移动端的处理"><a href="#移动端的处理" class="headerlink" title="移动端的处理"></a>移动端的处理</h1><p>移动端因为网速问题，所以要尽量减少无用的请求次数。<br>一般的操作是在文件后面<code>加上随机字符串</code>，然后缓存时间设置为<code>Cache-Control: max-age=31536000</code>一年。<br>这样就不会出现无用的304的请求。<br>一旦需要更新资源，就改变文件后面的字符串，实现文件资源更新。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><ol>
+<li><code>Expires</code>和<code>Cache-Control</code>是强制缓存，如果没有过期，则不会发送资源请求。</li>
+<li><code>Last-Modefied</code>和<code>Etag</code>是对比缓存，不管有没有过期，都会发送资源请求。如果没过期，则返回304；如果过期了，则返回资源和<code>Last-Modefied</code>和<code>Etag</code>信息</li>
+<li>判断优先级<code>Expires</code> &gt; <code>Cache-Control</code> &gt; <code>Etag</code> &gt; <code>Last-Modefined</code></li>
+</ol>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ol>
+<li><a href="http://www.cnblogs.com/chenqf/p/6386163.html" target="_blank" rel="external">彻底弄懂HTTP缓存机制及原理</a></li>
+</ol>
+
+  </section>
+
+</article>
+
+
+
+        <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2017 - <a href="/">@Dam Deng</a>
+    </span>
+</footer>
+
+    </div>
+</div>
+
+
+ 
+</body>
+</html>
